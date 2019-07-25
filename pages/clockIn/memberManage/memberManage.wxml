@@ -1,0 +1,18 @@
+<search bindsearchInput='inputchange' placeholder='搜索成员'></search>
+<view class='box'>
+  <block wx:for='{{listData}}' wx:key='Id'>
+    <view class='list'>
+      <view class='left'>
+        <image mode='widthFix' src='{{item.UserAvaUrl}}' class='image'></image>
+        <view class='info'>
+          <view class='name'>{{item.UserNickName}}</view>
+          <view class='time'>{{item.showTime}}</view>
+        </view>
+      </view>
+      <view bindtap='changeAuthority' data-index='{{index}}' class='submit'>
+        {{item.SmallCardLimit ? "取消限制" : "限制发表"}}
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:if='{{listData.length<=0}}' class='noData'>暂无成员</view>

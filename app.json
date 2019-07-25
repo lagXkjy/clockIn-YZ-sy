@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/clockIn/clockIn/clockIn",
+    "pages/clockIn/createNew/createNew",
+    "pages/clockIn/createNewTheme/createNewTheme",
+    "pages/clockIn/checkAllTheme/checkAllTheme",
+    "pages/clockIn/dataManage/dataManage",
+    "pages/clockIn/memberManage/memberManage",
+    "pages/clockIn/manageTheme/manageTheme",
+    "pages/clockIn/themeDetails/themeDetails",
+    "pages/clockIn/details/details",
+    "pages/clockIn/cutOut/cutOut",
+    "pages/clockIn/myClockInDiary/myClockInDiary",
+    "pages/clockIn/publishDiary/publishDiary",
+    "pages/clockIn/comment/comment",
+    "pages/clockIn/thisRecord/thisRecord",
+    "pages/New/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "一朝打卡",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#848383",
+    "selectedColor": "#7c99d0",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/clockIn/clockIn/clockIn",
+        "text": "打卡",
+        "iconPath": "/images/clock2.png",
+        "selectedIconPath": "/images/clock1.png"
+      },
+      {
+        "pagePath": "pages/New/index/index",
+        "text": "我的",
+        "iconPath": "/images/TE_13.png",
+        "selectedIconPath": "/images/KAN_13.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "search": "/component/search/search",
+    "publish": "/component/publish/publish",
+    "add-score": "/component/addScore/addScore",
+    "modular-title": "/component/modularTitle/modularTitle",
+    "diary-list": "/component/diaryList/diaryList",
+    "poster": "/component/poster/poster",
+    "music": "/component/music/music"
+  },
+  "sitemapLocation": "sitemap.json"
+}
